@@ -62,4 +62,4 @@ The app is served at `http://localhost`. Set `SMTP_ENABLED=true` and configure S
 
 ## Citation
 
-> Qoku et al. (2026) — manuscript in preparation.
+> Manuscript in preparation.
