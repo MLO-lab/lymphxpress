@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+data/
+.eggs/
+.history/
+.env
+.venv/
+
+# Node / Frontend
+web/frontend/node_modules/
+web/frontend/dist/
+
+# App runtime
+/jobs/
+web/dump.rdb
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# macOS
+.DS_Store

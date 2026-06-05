@@ -1,0 +1,35 @@
+[project]
+name = "lymphxpress"
+version = "0.1.0"
+description = "DLBCL molecular subtype classifier — LymphXPress"
+readme = "README.md"
+authors = [{name = "Arber Qoku", email = "arber.qoku@outlook.com"}]
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "numpy>=1.24,<2.1",
+    "pandas>=2.2",
+    "scikit-learn>=1.6",
+    "xgboost>=2.1",
+    "tqdm>=4.67",
+    "click>=8.1",
+    "seaborn>=0.13",
+    "openpyxl>=3.1",
+]
+
+[project.scripts]
+lymphxpress = "lymphxpress.clf:classify_cli"
+
+[project.urls]
+Homepage = "https://github.com/arberqoku/lymphxpress"
+Repository = "https://github.com/arberqoku/lymphxpress"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["lymphxpress*"]
+
+[tool.setuptools.package-data]
+lymphxpress = ["log.conf"]

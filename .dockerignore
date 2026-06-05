@@ -1,0 +1,10 @@
+.git/
+.gitignore
+.dockerignore
+*.md
+web/frontend/node_modules/
+web/frontend/dist/
+**/__pycache__/
+**/*.pyc
+**/*.egg-info/
+web/dump.rdb
