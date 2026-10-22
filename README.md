@@ -7,7 +7,7 @@ XGBoost ensemble classifier for DLBCL molecular subtypes (MCD, A53, N1, BN2, EZB
 Requires Python 3.10–3.12. Clone the repo and install in editable mode:
 
 ```bash
-git clone https://github.com/arberqoku/lymphxpress
+git clone https://github.com/MLO-lab/lymphxpress
 cd lymphxpress
 pip install -e .
 ```
@@ -48,17 +48,6 @@ clf.fit(seed=0)
 predictions = clf.predict()       # pandas Series: sample → subtype
 probabilities = clf.predict_proba()  # DataFrame: sample × subtype
 ```
-
-## Web server (Docker)
-
-Requires Docker and Docker Compose.
-
-```bash
-cd web
-docker compose up --build
-```
-
-The app is served at `http://localhost`. Set `SMTP_ENABLED=true` and configure SMTP env vars in `docker-compose.yml` to enable email verification in production.
 
 ## Citation
 

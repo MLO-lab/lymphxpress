@@ -10,6 +10,9 @@ data/
 .env
 .venv/
 
+# Web app (kept local only)
+/web/
+
 # Node / Frontend
 web/frontend/node_modules/
 web/frontend/dist/
